@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.HashMap;
 
 public class Worker {
@@ -17,7 +19,7 @@ public class Worker {
     }
 
     public void decrement(String s) {
-        if (!data_.containsKey(s)) {
+        if (!data.containsKey(s)) {
             data.put(s, new Counter());
         }
         data.get(s).value--;
